@@ -17,10 +17,27 @@ html {
 body {
   font-size: 1.6rem;
   display: flex;
+  height: 100vh;
 }
 
 section.picture {
-  background: url(./assets/halie-west-25xggax4bSA-unsplash.jpg) 
+  background: url(./assets/halie-west-25xggax4bSA-unsplash.jpg);
+  background-size: cover;
+  width: 33%;
+  min-width: 300px;
+}
+.logo {
+  margin-top: 25vh;
+}
+
+.logo-icon {
+  width: 100px;
+}
+
+.logo-title {
+  color: white;
+  font-style: 'Norse-Bold', sans-serif;
+  display: inline-block;
 }
 
 section.form-container {
