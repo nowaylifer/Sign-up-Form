@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url(./assets/Norse-Bold.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  display: flex;
+}
+
+section.picture {
+  background: url(./assets/halie-west-25xggax4bSA-unsplash.jpg) 
+}
+
+section.form-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#user-form {
+  display: flex;
+}
