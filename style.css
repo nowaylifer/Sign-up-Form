@@ -27,7 +27,11 @@ section.picture {
   min-width: 300px;
 }
 .logo {
-  margin-top: 25vh;
+  margin-top: 18vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(0, 0, 0, 0.4);
 }
 
 .logo-icon {
@@ -35,9 +39,24 @@ section.picture {
 }
 
 .logo-title {
+  font-family: 'Norse-Bold', sans-serif;
+  font-size: 10rem;
+}
+
+.picture {
+  position: relative;
   color: white;
-  font-style: 'Norse-Bold', sans-serif;
-  display: inline-block;
+}
+
+.credits {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.credits a {
+  color: inherit;
 }
 
 section.form-container {
