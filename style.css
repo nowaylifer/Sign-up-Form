@@ -3,6 +3,9 @@
   src: url(./assets/Norse-Bold.otf);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
@@ -18,16 +21,24 @@ body {
   font-size: 1.6rem;
   display: flex;
   height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F9FAFB;
+}
+
+h2 {
+  font-size: 2.3rem;
 }
 
 section.picture {
   background: url(./assets/halie-west-25xggax4bSA-unsplash.jpg);
   background-size: cover;
-  width: 33%;
+  width: 37%;
   min-width: 300px;
+  flex-shrink: 0;
 }
+
 .logo {
-  margin-top: 18vh;
+  margin-top: 21vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,10 +71,103 @@ section.picture {
 }
 
 section.form-container {
+  flex-grow: 1;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+
+.form-container > div {
+  width: 100%;
+}
+
+.form-wrapper {
+  background-color: white;
+  padding: 16px 0 40px 50px;
+  margin-bottom: 40px;
+  box-shadow: 0 5px 5px rgb(0 0 0 / 12%); 
+  position: relative;
 }
 
 #user-form {
   display: flex;
+  margin-top: 20px;
+  gap: 75px;
+}
+
+form > div {
+  width: 27%;
+}
+
+form input {
+  width: 100%;
+  height: 3.5rem;
+  border-radius: 5px;
+  border: #E5E7EB 1px solid;
+  background-color: #FFFEFE;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 0 15px;
+}
+
+form input:focus {
+  border: rgb(10, 10, 219) 1.5px solid;
+  outline: none;
+  box-shadow: 2px 2px 5px rgb(0 0 0 / 25%);
+}
+
+form > div div:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  text-transform: uppercase;
+  color: #505863;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+button[type='submit'] {
+  width: 20%;
+  height: 50px;
+  margin-left: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #596D48;
+  color: white;
+  font-size: 2rem;
+  box-shadow: 2px 2px 5px rgb(0 0 0 / 25%);
+  margin-bottom: 30px;
+}
+
+button[type='submit']:hover, 
+button[type='submit']:active {
+  cursor: pointer;
+  background-color: #404e33;
+}
+
+.form-container p {
+  font-size: 2.2rem;
+  margin-left: 50px;
+  font-weight: 700;
+}
+
+.form-container p:first-child {
+  margin-bottom: 20px;
+}
+
+.form-container p:nth-of-type(2) {
+  margin-bottom: 50px;
+}
+
+.form-container p:nth-of-type(3) {
+
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.form-container p:nth-of-type(3) a:any-link {
+  color: #596D48;
+  text-decoration: none;
 }
