@@ -96,6 +96,7 @@ section.form-container {
 
 form > div {
   width: 27%;
+  min-width: 150px;
 }
 
 form input {
@@ -129,8 +130,8 @@ label {
 }
 
 button[type='submit'] {
-  width: 20%;
   height: 50px;
+  min-width: 180px;
   margin-left: 50px;
   border-radius: 10px;
   border: none;
